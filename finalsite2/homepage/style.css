@@ -1,0 +1,217 @@
+
+
+body {
+  margin: 0;
+  margin: 0;
+}
+  .topnav {
+  background-color: #F2E2DC;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  }
+
+.logo{
+  font-size: 1.5rem;
+  margin: .5rem;
+}
+  
+.topnav li:hover {
+  background-color: #E6BF9C;
+  text-decoration: none;
+  color: black;
+  }
+  
+  .topnav-links ul {
+  margin: 0;
+  padding: 0;
+  display: flex; 
+  }
+
+  .topnav-links li {
+  list-style: none;
+  } 
+
+
+  .topnav-links li a {
+  display: block;
+  padding: 1rem;
+  }
+
+.toggle-button {
+  position: absolute;
+  top: .75rem;
+  right: 1rem;
+  display:none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+
+.toggle-button .bar {
+  width: 100%;
+  background-color: black;
+  border-radius: 10px;
+  height: 3px;
+}
+
+
+@media (max-width:481px) {
+
+  .toggle-button {
+    display: none;
+
+  }
+  .topnav-links {
+    display: flex;
+    width: 100%;
+  }
+
+
+  .topnav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .topnav-links ul {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .topnav-links li {
+text-align: center;
+
+  }
+.topnav-links li a {
+  padding: .5rem 1rem;
+}
+
+.topnav-links.active {
+  display: flex;
+}
+
+}
+
+
+  
+
+
+
+
+p{
+  font-size:24px;
+  
+}
+
+header,
+footer {
+  background-color:#F2E2DC;
+  grid-column: 1 / span 4;
+  height: 100px;
+
+}
+
+.container{
+   display: grid;
+  grid-template-columns: repeat(4, 25%);
+  grid-gap: 0px;
+  width: 100%;
+  
+  
+}
+
+
+
+
+
+.box1 {
+   
+  height: 150px;
+  grid-column: 1 / span 4;
+  font-size: 36px bold;
+ text-align: center;
+}
+
+
+
+.box2{
+ background-color: pink;
+ grid-column: 1/span 4;
+ height: 200px;
+ font-size: 17px;
+  text-align: center;
+  
+
+}
+.blurb{
+  
+  
+  margin-left: 80px;
+  margin-right: 80px;
+}
+.box3{
+  background-color: lightgreen;
+ grid-column: 1/span 4;
+ height: 200px;
+  display: flex; 
+  flex-direction: row;
+  
+}
+
+.gb3{
+  margin-top: 16px;
+  height: 112px;
+  background-color: yellow;
+  width: 50%;
+  
+}
+  
+  .gb4{
+  margin-top: 16px;
+  height: 112px;
+  background-color: orange;
+  width: 50%;
+  grid-column: 2 / span 4;
+  
+  
+}
+  
+
+  
+/* @media screen and (min-width: px) {
+  
+  .box1, .box2 {
+    grid-column: 1 / span 2;
+    background-color:blue;
+  }
+   .box3{
+    flex-direction: column; 
+     background-color: lightgreen;
+ grid-column: 1/span 3;
+ height: 200px;
+  display: flex; 
+  }
+
+}
+
+
+@media screen and (min-width: ) {
+  
+
+  
+    
+  .box3{
+    flex-direction: column; 
+     background-color: lightgreen;
+ grid-column: 1/span 4;
+ height: 200px;
+  display: flex; 
+  }
+
+
+
+}
+
+
+

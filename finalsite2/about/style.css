@@ -1,0 +1,53 @@
+body {
+    margin: auto;
+    font-family: 'Prata', serif;
+    background-color: #E69696;
+  }
+  
+  
+  
+  
+  .topnav {
+    background-color: #000000;
+    overflow: hidden;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    position:absolute;
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: #E6BF9C;
+    color: black;
+  }
+  
+
+  .topnav a.logo {
+    background-color: #C4E6A8;
+    color: #000000;
+
+  }
+
+
+p {
+    font-family: didot ;
+    text-align: center;
+  }
+
+
+
+header {
+    font-family: didot ;
+    text-align: center;
+  }
+  
+  
