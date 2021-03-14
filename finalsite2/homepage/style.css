@@ -4,25 +4,31 @@ body {
   margin: 0;
   margin: 0;
 }
-  .topnav {
+
+.topnav {
   background-color: #F2E2DC;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
   }
 
 .logo{
   font-size: 1.5rem;
   margin: .5rem;
 }
+
+.topnav-links {
+  height: 100%;
+}
   
 .topnav li:hover {
   background-color: #E6BF9C;
   text-decoration: none;
   color: black;
-  }
+  } 
   
-  .topnav-links ul {
+  .topnav-links ul{
   margin: 0;
   padding: 0;
   display: flex; 
@@ -37,6 +43,7 @@ body {
   display: block;
   padding: 1rem;
   }
+  
 
 .toggle-button {
   position: absolute;
@@ -51,7 +58,7 @@ body {
 
 .toggle-button .bar {
   width: 100%;
-  background-color: black;
+  background-color: rgb(204, 40, 40);
   border-radius: 10px;
   height: 3px;
 }
@@ -59,38 +66,30 @@ body {
 
 @media (max-width:481px) {
 
-  .toggle-button {
-    display: none;
-
-  }
-  .topnav-links {
-    display: flex;
-    width: 100%;
-  }
-
-
-  .topnav {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .topnav-links ul {
-    flex-direction: column;
-    width: 100%;
-  }
-
-  .topnav-links li {
-text-align: center;
-
-  }
-.topnav-links li a {
+ .topnav {
+flex-direction: column;
+align-items: flex-start;
+ }
+ .toggle-button{
+   display: block;
+ }
+ .topnav-links{
+   display: none;
+   width: 100%;
+ }
+.topnav-links ul {
+ width: 100%;
+ flex-direction: column;
+}
+.topnav-links ul li {
+  text-align: center;
+}
+.topnav-links ul li a {
   padding: .5rem 1rem;
 }
-
-.topnav-links.active {
+.topnav-links.active{
   display: flex;
 }
-
 }
 
 
@@ -108,7 +107,7 @@ header,
 footer {
   background-color:#F2E2DC;
   grid-column: 1 / span 4;
-  height: 100px;
+  
 
 }
 

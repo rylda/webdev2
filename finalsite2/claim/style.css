@@ -19,7 +19,7 @@ body {
     background-color: #E6BF9C;
     text-decoration: none;
     color: black;
-    font-color:black;
+    
     
     }
     
@@ -58,10 +58,10 @@ body {
   }
   
   
-  @media (max-width:481px) {
+  @media (min-width:481px) {
   
     .toggle-button {
-      display: none;
+      display: flex;
   
     }
     .topnav-links {
@@ -91,6 +91,9 @@ body {
   .topnav-links.active {
     display: flex;
   }
+
+  
+   
   
   }
   
@@ -124,7 +127,7 @@ body {
   
   
   .fullform {
-     background: #ffffff;
+     background: #FAEDD7;
     padding: 30px 40px;
     grid-column: 2/ 4;
     width: 100%;
@@ -132,8 +135,8 @@ body {
     box-sizing: border-box;
     text-align: center;
     border-radius: 8px;
-   font-family: #;
-    box-shadow: 0 0 5px;
+ 
+    box-shadow: 0 0 5px ;
     
   
    
@@ -143,7 +146,7 @@ body {
   .fullform h1 {
     text-align: center;
     margin-top: none;
-    
+  
    
   }
   
@@ -155,7 +158,7 @@ body {
   }
   
   .formbox {
-    
+   
    border-radius: 8px;
   
     margin: 4px 0;
@@ -180,7 +183,7 @@ body {
     border: 1px solid gray;
     background-color: #FFF3EB;
     width: 100%;
-    border: none;
+    border-radius: 2px;
     font-size: 16px;
   }
 
