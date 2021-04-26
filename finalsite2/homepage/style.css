@@ -3,6 +3,8 @@
 body {
   margin: 0;
   margin: 0;
+  font-family: 'Shippori Mincho', serif;
+  
 }
 
 .topnav {
@@ -11,15 +13,18 @@ body {
   justify-content: space-between;
   align-items: center;
   position: relative;
+ 
   }
 
 .logo{
-  font-size: 1.5rem;
+  font-size: 2rem;
   margin: .5rem;
+  font-family: 'Shippori Mincho', serif;
 }
 
 .topnav-links {
   height: 100%;
+  font-family: 'Montserrat', sans-serif;
 }
   
 .topnav li:hover {
@@ -42,6 +47,8 @@ body {
   .topnav-links li a {
   display: block;
   padding: 1rem;
+  text-decoration: none;
+  color: black;
   }
   
 
@@ -64,7 +71,7 @@ body {
 }
 
 
-@media (max-width:481px) {
+@media screen and (max-width:481px) {
 
  .topnav {
 flex-direction: column;
@@ -86,6 +93,7 @@ align-items: flex-start;
 }
 .topnav-links ul li a {
   padding: .5rem 1rem;
+ 
 }
 .topnav-links.active{
   display: flex;
@@ -123,57 +131,103 @@ footer {
 
 
 
-
 .box1 {
    
-  height: 150px;
+  height: 125px;
   grid-column: 1 / span 4;
-  font-size: 36px bold;
+  font-size: 24px bold;
  text-align: center;
+ font-family: 'Montserrat', sans-serif;
+ font-weight: 200;
 }
 
-
-
-.box2{
- background-color: pink;
- grid-column: 1/span 4;
- height: 200px;
- font-size: 17px;
+.box2 {
+  grid-column: 1/span 4;
+ height: 50px;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  
+}
 
-}
-.blurb{
-  
-  
-  margin-left: 80px;
-  margin-right: 80px;
-}
+
 .box3{
-  background-color: lightgreen;
+  
  grid-column: 1/span 4;
- height: 200px;
+ height: 300px;
   display: flex; 
   flex-direction: row;
+  margin-left: 100;
   
+
+  
+  
+}
+
+
+.box4 {
+  grid-column: 1/span 4;
+ padding-top: 100px;
+
+   
+  
+  
+}
+
+.cataloglink {
+  text-align: center;
+  font-size: 15px;
 }
 
 .gb3{
-  margin-top: 16px;
+  padding-left: 20%;
+  margin-top: 60px;
   height: 112px;
-  background-color: yellow;
-  width: 50%;
+
+  width: 33%;
   
 }
   
   .gb4{
-  margin-top: 16px;
+  margin-top: 60px;
   height: 112px;
-  background-color: orange;
+  
   width: 50%;
   grid-column: 2 / span 4;
   
   
+}
+
+.foot {
+  padding-bottom: 15px;
+  background-color:#F2E2DC;
+}
+
+.footerz {
+  background-color:#F2E2DC;
+  width: 80%;
+  height:15vh;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  
+}
+
+.footerhead {
+  background-color:#F2E2DC;
+  display: flex;
+  flex-direction: column;
+  margin-right: 4rem;
+ 
+}
+
+.footerhead h2 {
+  background-color: #F2E2DC;
+  margin-bottom: 1rem;
+}
+
+.footerhead a {
+  text-decoration: none;
 }
   
 

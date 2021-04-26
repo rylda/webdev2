@@ -1,198 +1,226 @@
 body {
-    margin: 0;
-    padding: 0;
-    background-color: #E6BF9C;  
-  }
-    .topnav {
-    background-color: #F2E2DC;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    }
-  
-  .logo{
-    font-size: 1.5rem;
-    margin: .5rem;
-  }
-    
-  .topnav li:hover {
-    background-color: #E6BF9C;
-    text-decoration: none;
-    color: black;
-    
-    
-    }
-    
-    .topnav-links ul {
-    margin: 0;
-    padding: 0;
-    display: flex; 
-    }
-  
-    .topnav-links li {
-    list-style: none;
-    } 
-  
-  
-    .topnav-links li a {
-    display: block;
-    padding: 1rem;
-    }
-  
-  .toggle-button {
-    position: absolute;
-    top: .75rem;
-    right: 1rem;
-    display:none;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 30px;
-    height: 21px;
-  }
-  
-  .toggle-button .bar {
-    width: 100%;
-    background-color: black;
-    border-radius: 10px;
-    height: 3px;
-  }
-  
-  
-  @media (min-width:481px) {
-  
-    .toggle-button {
-      display: flex;
-  
-    }
-    .topnav-links {
-      display: flex;
-      width: 100%;
-    }
-  
-  
-    .topnav {
-      flex-direction: column;
-      align-items: flex-start;
-    }
-  
-    .topnav-links ul {
-      flex-direction: column;
-      width: 100%;
-    }
-  
-    .topnav-links li {
+  margin: 0;
+  padding: 0;
+  width: 100%; /* this was set to 95%!" */
+  font-family: "Shippori Mincho", serif;
+}
+
+/* make sure your CSS matches the flow of your site */
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+  grid-gap: 25px;
+}
+
+header,
+footer {
+  background-color: #f2e2dc;
+  grid-column: 1 / span 4;
+  min-height: 50px;
+}
+
+.topnav {
+  /* Not needed since it is in the header above
+    background-color: #F2E2DC; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 2rem;
+  margin: 0.5rem;
+  font-family: "Shippori Mincho", serif;
+}
+
+.topnav-links {
+  height: 100%;
+  font-family: "Montserrat", sans-serif;
+}
+
+.topnav-links ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.topnav-links li {
+  list-style: none;
+}
+
+.topnav-links li a {
+  display: block;
+  padding: 1rem;
+  text-decoration: none;
+  color: black;
+}
+
+
+.topnav li:hover {
+  background-color: #e6bf9c;
+  text-decoration: none;
+  color: black;
+}
+
+
+
+.toggle-button {
+  position: absolute;
+  top: 0.75rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+
+.toggle-button .bar {
+  width: 100%;
+  background-color: rgb(204, 40, 40);
+  border-radius: 10px;
+  height: 3px;
+}
+
+button {
+  width: 75px;
+  height: 50px;
+  color: black;
+  background-color: white;
+  border: 0.5px solid black;
+  border-radius: 10%;
+}
+
+p {
+  font-size: 24px;
+}
+
+.blurb {
+  margin-left: 80px;
+  margin-right: 80px;
+}
+.box1 {
+  padding: 24px 64px;
+  grid-column: 1 / span 4;
+  font-size: 24px;
   text-align: center;
-  
-    }
-  .topnav-links li a {
-    padding: .5rem 1rem;
+  /* font-family: "Shippori Mincho", serif; set in body so we don't need to set it here*/
+  font-weight: 700; /* this is bold - ask me about weights */
+}
+
+.fullform {
+  background: #faedd7;
+  padding: 25px 40px;
+  grid-column: 2/ 4;
+
+  width: 2/4;
+ 
+  box-sizing: border-box;
+  text-align: center;
+  border-radius: 8px;
+  font-family: "Montserrat", sans-serif;
+  box-shadow: 0 0 5px;
+}
+
+.fullform h1 {
+  text-align: center;
+  margin-top: none;
+}
+
+.fullform label {
+  display: block;
+}
+
+.formbox {
+  border-radius: 8px;
+
+  margin: 4px 0;
+  padding: 12px 18px;
+  border-radius: 1%;
+}
+
+.formbox label {
+  display: block;
+  text-align: left;
+  font-size: 15px;
+}
+
+.formbox input,
+.formbox textarea {
+  border: 1px solid gray;
+  background-color: #fff3eb;
+  width: 100%;
+  height: 30px;
+  border-radius: 2px;
+  font-size: 16px;
+}
+
+.foot {
+  padding-bottom: 80px;
+  background-color: #f2e2dc;
+}
+
+.footerz {
+  background-color: #f2e2dc;
+  padding-bottom: 40px;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 15%;
+}
+
+.footerhead {
+  display: flex;
+  flex-direction: column;
+  margin-right: 3rem;
+}
+
+.footerhead h2 {
+  font-size: 16px;
+  margin-bottom: 2rem;
+}
+
+.footerhead a {
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .box1 {
+    height: 400px;
   }
-  
+
+  .toggle-button {
+    display: flex;
+  }
+  .topnav-links {
+    display: none;
+    width: 100%;
+  }
+
+  .topnav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .topnav-links ul {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .topnav-links li {
+    text-align: center;
+  }
+  .topnav-links li a {
+    padding: 0.5rem 1rem;
+  }
+
   .topnav-links.active {
     display: flex;
   }
-
-  
-   
-  
-  }
-  
-  
-    
-  
-  
-  
-  
-  p{
-    font-size:24px;
-    
-  }
-  
-  header,
-  footer {
-    background-color:#F2E2DC;
-    grid-column: 1 / span 4;
-    height: 50px;
-   
-  
-  }
-  
-  .container{
-     display: grid;
-    grid-template-columns: repeat(4, 25%);
-    grid-gap: 25px;
-    width: 100%;
-    
-  }
-  
-  
-  .fullform {
-     background: #FAEDD7;
-    padding: 30px 40px;
-    grid-column: 2/ 4;
-    width: 100%;
-    max-width: 600px;
-    box-sizing: border-box;
-    text-align: center;
-    border-radius: 8px;
- 
-    box-shadow: 0 0 5px ;
-    
-  
-   
-    
-  }
-  
-  .fullform h1 {
-    text-align: center;
-    margin-top: none;
-  
-   
-  }
-  
-  .fullform label {
-    
-    display: block;
-  
-    
-  }
-  
-  .formbox {
-   
-   border-radius: 8px;
-  
-    margin: 4px 0;
-    padding: 12px 18px;
-    border-radius: 1%;
-   
-    
-  }
-  
-  .formbox label {
-    
-    display: block;
-    text-align: left;
-    font-size: 15px;
-  
-    
-    
-  }
-  
-  
-  .formbox input, .formbox textarea {
-    border: 1px solid gray;
-    background-color: #FFF3EB;
-    width: 100%;
-    border-radius: 2px;
-    font-size: 16px;
-  }
+}
 
 
- 
   
-  
-  button {
-    
-    
-    
-  }
